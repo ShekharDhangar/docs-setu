@@ -1,0 +1,21 @@
+{
+  "apis": [
+    {
+      "operationId": "paymentLink",
+      "description": "",
+      "request": {
+        "properties": {
+          "transactionNote": {
+            "description": "Used to show a note on payer app",
+            "type": "string",
+            "maxLength": 100,
+            "example": "Payment for loan 123"
+          }
+        }
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    }
+  ]
+}
