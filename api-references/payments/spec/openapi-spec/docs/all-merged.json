@@ -1,0 +1,592 @@
+{
+  "apis": [
+    {
+      "operationId": "listActors",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "createActor",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "getActorById",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "deleteActorByID",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "updateActorByID",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "listApps",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "createApp",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "getAppById",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "deleteAppByID",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "updateAppByID",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "resetAppAuthScheme",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "fetchToken",
+      "description": "Fetch token to be used to authorize all Setu APIs",
+      "request": {},
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "BouSettlementsDetails",
+      "description": null,
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Identifier for product instance. Required for authorisation.",
+            "name": "X-Setu-Product-Instance-ID",
+            "in": "header",
+            "required": true
+          },
+          {
+            "description": "Input parameters for a Bou settlements details request.",
+            "name": "BouSettlementsDetailsRequest",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/bouSettlementsDetailsRequest"
+            }
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "UmapUpiCallback",
+      "description": null,
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "name": "x-setu-signature",
+            "in": "header",
+            "required": true
+          },
+          {
+            "description": "Input parameters for a umap callback request.",
+            "name": "umapUpiCallbackRequest",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/umapUpiCallbackRequestBody"
+            }
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "createPartner",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "getPartnerById",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "deletePartnerByID",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "updatePartnerByID",
+      "description": "",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "resolvePaymentLink",
+      "description": "Resolve payment link generated by payment link API",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Shortlink ID",
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "initiateBatchRefund",
+      "description": "Initiate a batch of several refunds at once",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "getRefundsBatchStatus",
+      "description": "Returns details about all refunds as part of the requested batch",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "getRefundStatus",
+      "description": "Returns details about the refund with the given refund ID",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "addCredit",
+      "description": "Request a bank account credit",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "mockSettlement",
+      "description": "Mock a settlement",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "getBillWithBillerBillID",
+      "description": "Get bill with biller bill ID",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "getBillers",
+      "description": "Get all billers",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "fetchBills",
+      "description": "Fetch bills",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "billSettlement",
+      "description": "Request bill settlement",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "getBillWithID",
+      "description": "Get bill with id",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "billFulfilment",
+      "description": "Request bill payment",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    },
+    {
+      "operationId": "validate",
+      "description": "Validate customer with biller",
+      "request": {
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Auth token generated using credentials provided to you",
+            "name": "Authorization",
+            "in": "header",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Identifier for product instance. Required for authorisation.",
+            "name": "X-Setu-Product-Instance-ID",
+            "in": "header",
+            "required": true
+          },
+          {
+            "description": "Input parameters for customer validation.",
+            "name": "validationRequest",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/validationRequest"
+            }
+          }
+        ]
+      },
+      "responses": {},
+      "requestSample": {},
+      "responseSample": {}
+    }
+  ]
+}
